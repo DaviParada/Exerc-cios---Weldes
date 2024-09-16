@@ -79,7 +79,6 @@ return 0;
 
 
 /* Exercicio - 6 */
-
 int main (){
 int x, y = 1, z = 1, i, aux;
 
