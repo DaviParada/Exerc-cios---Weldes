@@ -1,0 +1,43 @@
+/* Exercicio - 1 */
+Var 
+peso,altura,imc : real 
+
+Inicio 
+Escreva ("Digite seu peso: ") 
+leia (peso) 
+Escreva ("Digite sua altura ") 
+leia (altura) 
+imc <- (peso/(altura ^ 2)) 
+Escreva ("Seu índice de massa corporal é: ",imc) 
+
+Fimalgoritmo 
+
+
+/* Exercicio - 2 */
+Var 
+a,raiz : real 
+
+Inicio 
+escreva ("Digite um número: ") 
+leia(a) 
+raiz <- (a ^ (1/2)) 
+escreva ("A raiz de ",a," é igual a:",raiz) 
+
+Fimalgoritmo 
+
+
+/* Exercicio - 3 */
+Var 
+valorTotal,desconto,calculo,novoValor : real 
+
+Inicio 
+Escreva ("Digite o valor total do produto: ") 
+leia (valorTotal) 
+Escreva ("Digite a porcentagem de desconto(sem %): ") 
+leia (desconto) 
+
+calculo <- (valorTotal * (desconto/100)) 
+novoValor <- (valorTotal - calculo) 
+Escreva ("O valor do desconto foi de:",calculo," reais,agora o produto custará ",novoValor," reais") 
+
+Fimalgoritmo 
