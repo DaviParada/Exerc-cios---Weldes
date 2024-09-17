@@ -78,6 +78,7 @@ int main (){
 
 
 /* Exercício 5 */
+/*
 int main (){
     int vetor [5], i;
     for (i = 0; i <= 4; i++){
@@ -97,13 +98,13 @@ int main (){
 
     return 0;
 }
+*/
 
 
 
 /* --- Nível 2 --- */
 
 /* Exercicio - 1 */
-/*
 void bubbleSort(int vetor[], int tamanho){
     int i, j, aux;
     for (i = 0; i < tamanho - 1; i++){
@@ -133,7 +134,6 @@ int main (){
 
     return 0;
 }
-*/
 
 
 /* Exercicio - 2 */
