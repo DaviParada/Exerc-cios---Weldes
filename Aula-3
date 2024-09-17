@@ -1,0 +1,60 @@
+/* Exercicio - 1 */
+Var 
+ano : inteiro 
+
+Inicio 
+Escreva ("Digite algum ano: ") 
+leia (ano)
+Se (ano % 4 = 0) e nao(ano % 100 = 0) então 
+Escreva ("O ano de ",ano," é bissexto!") 
+Senao 
+Escreva ("O ano de ",ano," não é bissexto!") 
+Fimse 
+
+Fimalgoritmo 
+
+
+/* Exercicio - 2 */
+Var 
+a,b,c : inteiro 
+
+Inicio 
+Escreva ("Digite um lado a: ") 
+leia(a) 
+Escreva ("Digite um lado b: ") 
+leia(b) 
+Escreva ("Digite um lado c: ") 
+leia(c)
+
+Se ((a + b) > c) e ((a + c) > b) e ((b + c) > a) então 
+Escreva ("Pode ser um triângulo!") 
+Senao 
+Escreva ("Não pode ser um triângulo!") 
+Fimse 
+
+Fimalgoritmo
+
+
+/* Exercicio - 3 */
+Var 
+altura,peso : real 
+sexo : caractere 
+
+Inicio 
+Escreva ("Escreva sua altura: ") 
+leia (altura) 
+Escreva ("Escreva seu sexo (homem/mulher): ") 
+leia (sexo) 
+
+Escolha ( ) 
+caso (sexo = "homem") 
+  Escreva ("O seu peso ideal seria de ",(72.7 * altura)) 
+caso (sexo = "mulher") 
+  Escreva ("O seu peso ideal seria de ",(62.1 * altura)) 
+Fimescolha 
+
+Fimalgoritmo 
+
+
+
+
