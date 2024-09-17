@@ -1,0 +1,69 @@
+/* Exercicio - 1 */
+Var 
+a : inteiro 
+b : inteiro 
+
+soma : inteiro 
+subtracao : inteiro 
+multiplicacao : inteiro 
+divisao : inteiro 
+
+Inicio 
+a <- 100 
+b <- 2 
+
+soma <- a + b 
+subtracao <- a - b 
+multiplicacao <- a * b 
+divisao <- a \ b 
+
+escreval (soma) 
+escreval (subtracao) 
+escreval (multiplicacao) 
+escreval (divisao) 
+
+Fimalgoritmo 
+
+
+/* Exercicio - 2 */
+Código:  
+Var 
+altura : real 
+base : real 
+area : real 
+
+Inicio 
+altura <- 4.5 
+base <- 5.5 
+area <- altura * base 
+
+escreva (area)  
+Fimalgoritmo 
+
+
+/* Exercicio - 3 */
+Var 
+a,b : inteiro 
+
+Inicio 
+escreva("Digite dois números inteiros: ") 
+leia(a) 
+leia (b) 
+escreva(a % b) 
+
+Fimalgoritmo 
+
+
+/* Exercicio - 4 */
+Var 
+a,raiz : real 
+
+Inicio 
+escreva ("Digite um número: ") 
+leia(a) 
+raiz <- (a ^ (1/2)) 
+
+escreva ("A raiz de ",a," é igual a:",raiz) 
+
+Fimalgoritmo
+
