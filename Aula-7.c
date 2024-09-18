@@ -171,6 +171,7 @@ int main (){
 
 
 /* Exercicio - 3 */
+/*
 int busca_sequencial(int vetor[], int tamanho, int valor){
     for(int i = 0; i < tamanho; i++){
         if (vetor[i] == valor){
@@ -196,6 +197,83 @@ int main (){
 
     return 0;
 }
+*/
+
+
+/* Exercicio - 4 */
+int notaMat(float aluno1[3], float aluno2[3], float aluno3[3], float aluno4[3], float aluno5[3], int tamanho){
+    printf("Digite a nota de matematica do aluno 1: \n");
+    scanf("%f", &aluno1[0]);
+    printf("Digite a nota de matematica do aluno 2: \n");
+    scanf("%f", &aluno2[0]);
+    printf("Digite a nota de matematica do aluno 3: \n");
+    scanf("%f", &aluno3[0]);
+    printf("Digite a nota de matematica do aluno 4: \n");
+    scanf("%f", &aluno4[0]);
+    printf("Digite a nota de matematica do aluno 5: \n");
+    scanf("%f", &aluno5[0]);
+    }
+
+int notaPort(float aluno1[3], float aluno2[3], float aluno3[3], float aluno4[3], float aluno5[3], int tamanho){
+    printf("Digite a nota de portugues do aluno 1: \n");
+    scanf("%f", &aluno1[1]);
+    printf("Digite a nota de portugues do aluno 2: \n");
+    scanf("%f", &aluno2[1]);
+    printf("Digite a nota de portugues do aluno 3: \n");
+    scanf("%f", &aluno3[1]);
+    printf("Digite a nota de portugues do aluno 4: \n");
+    scanf("%f", &aluno4[1]);
+    printf("Digite a nota de portugues do aluno 5: \n");
+    scanf("%f", &aluno5[1]);
+    }
+
+int notaFis(float aluno1[3], float aluno2[3], float aluno3[3], float aluno4[3], float aluno5[3], int tamanho){
+    printf("Digite a nota de fisica do aluno 1: \n");
+    scanf("%f", &aluno1[2]);
+    printf("Digite a nota de fisica do aluno 2: \n");
+    scanf("%f", &aluno2[2]);
+    printf("Digite a nota de fisica do aluno 3: \n");
+    scanf("%f", &aluno3[2]);
+    printf("Digite a nota de fisica do aluno 4: \n");
+    scanf("%f", &aluno4[2]);
+    printf("Digite a nota de fisica do aluno 5: \n");
+    scanf("%f", &aluno5[2]);
+    }
+
+int main(){
+    float media1, media2, media3, media4, media5;
+    float aluno1[3], aluno2[3], aluno3[3], aluno4[3], aluno5[3];
+    int tamanho = 3;
+    float pesoMat, pesoPort, pesoFis, soma;
+
+    printf("Digite o peso da nota de matematica: ");
+    scanf("%f", &pesoMat);
+    printf("Digite o peso da nota de portugues: ");
+    scanf("%f", &pesoPort);
+    printf("Digite o peso da nota de fisica: ");
+    scanf("%f", &pesoFis);
+
+    notaMat(aluno1, aluno2, aluno3, aluno4, aluno5, tamanho);
+    notaPort(aluno1, aluno2, aluno3, aluno4, aluno5, tamanho);
+    notaFis(aluno1, aluno2, aluno3, aluno4, aluno5, tamanho);
+
+    soma = (pesoMat + pesoPort + pesoFis);
+    media1 = ((aluno1[0] * pesoMat) + (aluno1[1] * pesoPort) + (aluno1[2] * pesoFis)) / soma;
+    media2 = ((aluno2[0] * pesoMat) + (aluno2[1] * pesoPort) + (aluno2[2] * pesoFis)) / soma;
+    media3 = ((aluno3[0] * pesoMat) + (aluno3[1] * pesoPort) + (aluno3[2] * pesoFis)) / soma;
+    media4 = ((aluno4[0] * pesoMat) + (aluno4[1] * pesoPort) + (aluno4[2] * pesoFis)) / soma;
+    media5 = ((aluno5[0] * pesoMat) + (aluno5[1] * pesoPort) + (aluno5[2] * pesoFis)) / soma;
+    
+    printf("Media do aluno 1: %.2f\n", media1);
+    printf("Media do aluno 2: %.2f\n", media2);
+    printf("Media do aluno 3: %.2f\n", media3);
+    printf("Media do aluno 4: %.2f\n", media4);
+    printf("Media do aluno 5: %.2f\n", media5);
+
+    return 0;
+}
+
+
 
 
 
