@@ -201,6 +201,7 @@ int main (){
 
 
 /* Exercicio - 4 */
+/*
 int notaMat(float aluno1[3], float aluno2[3], float aluno3[3], float aluno4[3], float aluno5[3], int tamanho){
     printf("Digite a nota de matematica do aluno 1: \n");
     scanf("%f", &aluno1[0]);
@@ -272,6 +273,38 @@ int main(){
 
     return 0;
 }
+*/
+
+
+/* Exercicio - 5 */
+int main (){
+    int vetor[10], numeroParaExcluir, tamanho = 10;
+    for(int i = 0; i < 10; i++){
+        printf("Digite um numero para o vetor: ");
+        scanf("%d", &vetor[i]);
+    }
+    
+    printf("Digite um numero para excluir a ocorrencia dele do vetor: ");
+    scanf("%d", &numeroParaExcluir);
+
+    for(int i = 0; i < tamanho; i++){
+        if(vetor[i] == numeroParaExcluir){
+            for(int j = i; j < tamanho - 1; j++){
+                vetor[j] = vetor[j + 1];
+            }
+            tamanho--;
+            i--;
+        }
+    }
+
+    printf("Vetor atualizado\n");
+    for(int i = 0; i < tamanho; i++){
+        printf("%d\n", vetor[i]);
+    }
+
+    return 0;
+}
+
 
 
 
