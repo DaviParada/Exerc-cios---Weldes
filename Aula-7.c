@@ -139,6 +139,7 @@ int main (){
 
 
 /* Exercicio - 2 */
+/*
 void somaVetores (int v1[], int v2[],int vResultante[], int tamanho){
     for(int i = 0; i < tamanho; i++){
         vResultante[i] = v1[i] + v2[i];
@@ -166,8 +167,35 @@ int main (){
 
     return 0;
 }
+*/
 
 
+/* Exercicio - 3 */
+int busca_sequencial(int vetor[], int tamanho, int valor){
+    for(int i = 0; i < tamanho; i++){
+        if (vetor[i] == valor){
+            printf("Numero Encontrado!");
+            return 1;
+        }
+    }
+    printf("Numero nao encontrado!");
+    return 0;
+}
+
+int main (){
+    int vetor[10], num, tamanho = 10;
+    for(int i = 0; i < tamanho; i++){
+        printf("Digite um numero para o vetor: ");
+        scanf("%d", &vetor[i]);
+    }
+
+    printf("Digite um numero para saber se esta presente no vetor:\n");
+    scanf("%d", &num);
+
+    busca_sequencial(vetor, tamanho, num);
+
+    return 0;
+}
 
 
 
