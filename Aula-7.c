@@ -105,6 +105,7 @@ int main (){
 /* --- Nível 2 --- */
 
 /* Exercicio - 1 */
+/*
 void bubbleSort(int vetor[], int tamanho){
     int i, j, aux;
     for (i = 0; i < tamanho - 1; i++){
@@ -134,10 +135,37 @@ int main (){
 
     return 0;
 }
+*/
 
 
 /* Exercicio - 2 */
+void somaVetores (int v1[], int v2[],int vResultante[], int tamanho){
+    for(int i = 0; i < tamanho; i++){
+        vResultante[i] = v1[i] + v2[i];
+    }
+}
 
+int main (){
+    int v1[9], v2[9], vResultante[9], tamanho = 9;
+    for(int i = 0; i < tamanho; i++){
+        printf("Digite os valores para o primeiro vetor: ");
+        scanf("%d", &v1[i]);
+    }
+    printf("\n");
+    for(int i = 0; i < tamanho; i++){
+        printf("Digite os valores para o segundo vetor: ");
+        scanf("%d", &v2[i]);
+    }
+
+    somaVetores(v1, v2, vResultante, tamanho);
+    
+    printf("\nVetor Resultante da soma: ");
+    for(int i = 0; i < tamanho; i++){
+        printf("%d; ", vResultante[i]);
+    }
+
+    return 0;
+}
 
 
 
