@@ -312,7 +312,31 @@ int main (){
 /* --- Nível 3 --- */
 
 /* Exercicio - 1 */
+int main (){
+    int tamanho, soma;
 
+    printf("Digite o tamanho dos vetores: ");
+    scanf("%d", &tamanho);
+
+    int vetor1[tamanho], vetor2[tamanho];
+
+    for(int i = 0; i < tamanho; i++){
+        printf("Digite os valores para o primeiro vetor: ");
+        scanf("%d", &vetor1[i]);
+    }
+    for(int i = 0; i < tamanho; i++){
+        printf("Digite os valores para o segundo vetor: ");
+        scanf("%d", &vetor2[i]);
+    }
+
+    for(int i = 0; i < tamanho; i++){
+        soma += (vetor1[i] * vetor2[i]);
+    }
+
+    printf("O produto escalar eh: %d", soma);
+
+    return 0;
+}
 
 
 
