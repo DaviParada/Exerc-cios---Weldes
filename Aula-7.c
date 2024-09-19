@@ -277,6 +277,7 @@ int main(){
 
 
 /* Exercicio - 5 */
+/*
 int main (){
     int vetor[10], numeroParaExcluir, tamanho = 10;
     for(int i = 0; i < 10; i++){
@@ -304,7 +305,7 @@ int main (){
 
     return 0;
 }
-
+*/
 
 
 
