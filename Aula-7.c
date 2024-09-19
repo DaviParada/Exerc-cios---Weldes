@@ -312,8 +312,9 @@ int main (){
 /* --- Nível 3 --- */
 
 /* Exercicio - 1 */
+/*
 int main (){
-    int tamanho, soma;
+    int tamanho, soma = 0;
 
     printf("Digite o tamanho dos vetores: ");
     scanf("%d", &tamanho);
@@ -337,6 +338,7 @@ int main (){
 
     return 0;
 }
+*/
 
 
 
