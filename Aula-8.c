@@ -129,6 +129,7 @@ return 0;
 /* --- Nível 2 --- */
 
 /* Exercício 1 */
+/*
 int main (){
 int matriz[3][4], Soma[3] = {0, 0, 0};
 for (int i = 0; i < 3; i++){
@@ -151,7 +152,7 @@ for (int i = 0; i < 3; i++){
 
 return 0;
 }
-
+*/
 
 
 
