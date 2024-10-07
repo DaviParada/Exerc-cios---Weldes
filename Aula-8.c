@@ -155,7 +155,12 @@ return 0;
 */
 
 
+/* Exercício 2 */
+int main (){
 
+
+    return 0;
+}
 
 
 
