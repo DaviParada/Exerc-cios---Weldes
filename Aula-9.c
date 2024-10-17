@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 // struct Aluno {     
 //     char nome[50];
 //     int idade;
@@ -22,25 +23,25 @@ typedef struct{
 
 int main (){
     Livros vetor[5];
-    char t[50], a[50], ibsn[50];
+    char titulo[50], autor[50], isbn[50];
     int year;
     for(int i = 0; i < 5; i++){
         printf("Digite o nome do livro %d: ", i + 1);
-        scanf("%s", t);
+        scanf("%s", titulo);
 
         printf("Digite o nome do autor do livro %d: ", i + 1);
-        scanf("%s", a);
+        scanf("%s", autor);
 
         printf("Digite o ano do livro %d : ", i + 1);
         scanf("%d", &year);
         getchar();
 
         printf("Digite o ISBN do livro %d: ", i + 1);
-        scanf("%s", ibsn);
+        scanf("%s", isbn);
 
-        strcpy(vetor[i].titulo, t);
-        strcpy(vetor[i].autor, a);
-        strcpy(vetor[i].isbn, ibsn);
+        strcpy(vetor[i].titulo, titulo);
+        strcpy(vetor[i].autor, autor);
+        strcpy(vetor[i].isbn, isbn);
         vetor[i].ano = year;
 
     }
@@ -54,3 +55,28 @@ int main (){
 
     return 0;
 }
+
+
+/* Exercício 2*/
+typedef struct{
+    float x;
+    float y;
+} ponto;
+
+int main (){
+    ponto ponto;
+    float varX, varY;
+    printf("Digite o valor de X do ponto");
+    scanf("%f", &varX);
+    printf("Digite o valor de Y do ponto");
+    scanf("%f", &varY);
+
+    ponto.x = varX;
+    ponto.y = varY;
+    
+    
+
+    
+}
+
+
