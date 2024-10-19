@@ -83,6 +83,68 @@ int main(){
 */
 
 /* Exercício - 4 */
+/*
+int Maior(int num1, int num2){
+    if (num1 > num2){
+        printf("%d eh o maior numero", num1);
+    } else {
+        printf("%d eh o maior numero", num2);
+    }
+    return 0;
+}
+int main(){
+    int num1, num2;
+    printf("Digite o primeiro numero: \n");
+    scanf("%d", &num1);
+    printf("Digite o segundo numero: \n");
+    scanf("%d", &num2);
+    Maior(num1, num2);
+
+}
+*/
+
+/* Exercício - 5 */
+float CtoF(float cel){
+    return ((1.8 * cel) + 32);
+}
+float FtoC(float fah){
+    return ((fah - 32) / 1.8);
+}
+int main(){
+    float cel, fah;
+    int menu;
+    do {
+        printf("Escolha uma opcao:\n");
+        printf("1 - Celsius para Fahrenheit\n");
+        printf("2 - Fahrenheit para Celsius\n");
+        printf("3 - Sair\n");
+        scanf("%d", &menu);
+
+        switch(menu){
+            case 1:
+             printf("Insira o valor em graus celsius:\n");
+             scanf("%f", &cel);
+             printf("Esse valor equivale a %.2f graus Fahrenheit\n", CtoF(cel));
+            break;
+            case 2:
+             printf("Insira o valor em graus Fahrenheit:\n");
+             scanf("%f", &fah);
+             printf("Esse valor equivale a %.2f graus Celsius\n", FtoC(fah));
+            break;
+            case 3:
+             printf("Saindo...\n");
+            break;
+            default:
+             printf("Opcao invalida!");
+            break;
+        }
+
+    } while(menu != 3);
+    return 0;
+}
+
+
+
 
 
 
