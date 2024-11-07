@@ -104,6 +104,7 @@ int main(){
 */
 
 /* Exercício - 5 */
+/*
 float CtoF(float cel){
     return ((1.8 * cel) + 32);
 }
@@ -142,43 +143,56 @@ int main(){
     } while(menu != 3);
     return 0;
 }
+*/
 
-
-
-
-
-
-
-/* AULA 11 */
-#include <stdio.h>
-#include <stdlib.h>
-
-void incrementa(int *valor){
-    printf("Antes de icrementar\n");
-    printf("O contador vale %d\n", (*valor));
-    printf("O endereço de memória eh %d\n", valor);
-
-    printf("Depois de incrementar\n");
-    printf("O contador vale %d\n", ++(*valor));
-    printf("O endereço de memória eh %d\n", valor);
+/* Exercício - 6 */
+/*
+int soma(int vet[], int tam){
+    int soma = 0;
+    for(int i = 0; i < tam; i++){
+        soma += vet[i];
+    }
+    return soma;
 }
 
-int main () {
-    int cont = 10;
+int main (){
+    int tam;
+  
+    scanf("%d", &tam);
 
-    printf("Antes de icrementar\n");
-    printf("O Contador vale %d\n", cont);
-    printf("O endereço de memória eh %d\n", &cont);
-
-    incrementa(&cont);
-
-    printf("Depois de icrementar\n");
-    printf("O contador vale %d\n", cont);
-    printf("O endereço de memória eh %d\n", &cont);
+    int vet[tam];
+  
+    for (int i = 0; i < tam; i++){
+        scanf("%d", &vet[i]);
+    }
+  
+    printf("%d", soma(vet,tam));
 
     return 0;
 }
+*/
 
+/* Exercício - 7 */
+/*
+int dig (int num){
+    int aux = 0;
+    do {
+        ++aux;
+        num /= 10;
+    } while (num != 0);
+    return aux;
+}
+int main (){
+
+    int num;
+    
+    scanf("%d", &num);
+
+    printf("%d", dig(num));
+
+    return 0;
+}
+*/
 
 
 

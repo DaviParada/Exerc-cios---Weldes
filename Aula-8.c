@@ -156,13 +156,128 @@ return 0;
 
 
 /* Exercício 2 */
-int main (){
+/*
+int main(){
 
+int matriz[3][3]; 
+
+int i;
+int j;
+int soma = 0;
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        scanf("%d", &matriz[i][j]);
+    }
+}
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        soma += matriz [i][j];
+    }
+}
+    printf("%d", soma);
 
     return 0;
 }
+*/
 
+/* Exercício 3 */
+/*
+int main(){
 
+int matriz[3][3];
 
+int i;
+int j;
+int soma;
+int k;
 
+scanf ("%d", &k);
 
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        scanf("%d", &matriz[i][j]);
+    }
+}
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        printf("%d ", matriz [i][j] * k);
+    }
+    
+    printf("\n");
+}
+}
+*/
+
+/* Exercício 4 */
+/*
+int main(){
+
+int matriz[3][3] = {
+    {1, 2, 3},
+    {2, 4, 5},
+    {3, 5, 6}
+};
+int tmatriz [3][3];
+
+int i;
+int j;
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        tmatriz[i][j] = matriz [j][i];
+    }
+}
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        if (matriz[i][j] != tmatriz [i][j]){
+            return printf("nao simetrica");
+        }
+    }
+}
+printf("simetrica");
+
+return 0;
+}
+*/
+
+/* Exercicio 5 */
+int main(){
+
+int matriz[3][3] = {
+    {1, 2, 3},
+    {2, 4, 5},
+    {2, 5, 6}
+};
+int tmatriz [3][3];
+
+int i;
+int j;
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        printf("%d ", matriz[i][j]);
+    }
+    printf("\n");
+}
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        tmatriz[i][j] = matriz [j][i];
+    }
+}
+
+printf("\ntransposta\n");
+
+for (i = 0; i < 3; i++){
+    for (j = 0; j < 3; j++){
+        printf("%d ", tmatriz[i][j]);
+        }
+        printf("\n");
+    }
+
+return 0;
+}
